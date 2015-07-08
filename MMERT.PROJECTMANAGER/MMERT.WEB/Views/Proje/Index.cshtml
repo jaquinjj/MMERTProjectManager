@@ -1,0 +1,84 @@
+﻿@model IEnumerable<MMERT.MODEL.Projects>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutProjects.cshtml";
+}
+
+                <!-- start:content -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>
+                            Projeler
+                        </h1>
+						<!-- start:breadcrumb -->
+						<ol class="breadcrumb">
+							<li><a href="#"><i class="fa fa-home"></i> Kontrol Paneli</a></li>
+							<li class="active">Projeler</li>
+
+						</ol>
+						<!-- end:breadcrumb -->
+                    </div>  
+                    <!-- start:site information -->
+                    <div class="site-information">
+                        <div class="row">
+							<div class="col-lg-4 col-md-4 col-xs-12">
+                            @foreach (var item in Model)
+                            {
+                                <div class="panel panel-default">
+									<div class="panel-heading">
+										<header class="panel-title">
+											<div class="text-center">
+												<strong>@item.PROJECTNAME</strong>
+											</div>
+										</header>
+									</div>
+									<div class="panel-body">
+										<div class="text-center" id="author">
+											<img src="../../Themes/img/user.png">
+											<h3>Mehmet Mert Usta</h3>
+											Danışman:<small class="label label-warning">@item.CONSULTANT</small>
+											Konusu:<p>@item.PROJECTDESCRP</p>
+											<p>@item.BEGIN-@item.FINISH</p>
+										</div>
+									</div>
+								</div>
+                            }
+								
+							</div>
+						<div class="col-md-12">
+						
+						</div>
+                            <div class="col-sm-6 col-md-3">
+
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end:site information -->
+
+                    <!-- start:site information 2 -->
+                    <div class="site-information-2">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end:site information 2 -->
+
+
+                </div>

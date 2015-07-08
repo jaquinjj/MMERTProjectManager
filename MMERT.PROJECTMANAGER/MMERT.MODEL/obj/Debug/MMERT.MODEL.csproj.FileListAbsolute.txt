@@ -1,0 +1,10 @@
+c:\users\toshiba\documents\visual studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\bin\Debug\MMERT.MODEL.dll
+c:\users\toshiba\documents\visual studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\bin\Debug\MMERT.MODEL.pdb
+c:\users\toshiba\documents\visual studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\obj\Debug\ResolveAssemblyReference.cache
+c:\users\toshiba\documents\visual studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\obj\Debug\MMERT.MODEL.dll
+c:\users\toshiba\documents\visual studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\obj\Debug\MMERT.MODEL.pdb
+C:\Users\Toshiba\Documents\Visual Studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\bin\Debug\MMERT.MODEL.dll.config
+C:\Users\Toshiba\Documents\Visual Studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\bin\Debug\EntityFramework.dll
+C:\Users\Toshiba\Documents\Visual Studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Toshiba\Documents\Visual Studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\bin\Debug\EntityFramework.xml
+C:\Users\Toshiba\Documents\Visual Studio 2010\Projects\MMERT.PROJECTMANAGER\MMERT.MODEL\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/js")
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="cl-default fixed">
+
+    <!-- start:navbar top -->
+    <header class="header">
+        <a href="ToDo.html" class="logo">
+            <i class="fa fa-pied-piper-alt"></i>MMERT
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="navbar-btn sidebar-toggle" data-target="#atas" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Açılır Kapanır Animate</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="collapse navbar-collapse" id="atas">
+                <div class="navbar-left">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope"></i>
+								</a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 messages</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="img/avatar3.png" class="img-circle" alt="User Image"/>
+                                                </div>
+                                                <h4>
+                                                    Support Team
+                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="img/avatar2.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Arjuna Design Team
+                                                    <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="img/avatar.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Developers
+                                                    <small><i class="fa fa-clock-o"></i> Today</small>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="img/avatar2.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Sales Department
+                                                    <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="img/avatar.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Reviewers
+                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">See All Messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 9 tasks</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Design some buttons
+                                                    <small class="pull-right">20%</small>
+                                                </h3>
+                                                <div class="progress xs">
+                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!-- end task item -->
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Create a nice theme
+                                                    <small class="pull-right">40%</small>
+                                                </h3>
+                                                <div class="progress xs">
+                                                    <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!-- end task item -->
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Some task I need to do
+                                                    <small class="pull-right">60%</small>
+                                                </h3>
+                                                <div class="progress xs">
+                                                    <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!-- end task item -->
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Make beautiful transitions
+                                                    <small class="pull-right">80%</small>
+                                                </h3>
+                                                <div class="progress xs">
+                                                    <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!-- end task item -->
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">View all tasks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="form-search">
+                            <input type="text" class="form-control" placeholder="Arama..">
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/user.png" class="img-circle img-responsive img-user">
+                                <strong></strong>
+                            </a>
+                            <ul class="dropdown-menu dropdown-login">
+                                <li>
+                                    <div class="navbar-login">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <p class="text-center">
+                                                    <img src="img/user.png" class="img-responsive img-circle">
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <p class="text-left"><strong>MMERT</strong></p>
+                                                <p class="text-left small">mehmetmertusta@gmail.com</p>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <small><a href="#">Profili Düzenle</a></small>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <small><a href="#">Notlar</a></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="navbar-login navbar-login-session">
+                                        <a href="#" class="btn btn-default btn-square btn-block">Çıkış</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end:navbar top -->
+
+    <!-- start:wrapper body -->
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <!-- start:left sidebar -->
+        <aside class="left-side sidebar-offcanvas">
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#user" role="tab" data-toggle="tab"><i class="fa fa-users"></i></a></li>
+                        <li><a href="#profile" role="tab" data-toggle="tab"><i class="fa fa-cog"></i></a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="user">
+                            <div class="image">
+                                <img src="img/user.png" class="img-circle" alt="User Image" />
+                            </div>
+                            <div class="info">
+                                <p>Merhaba jaquinjj,</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="profile">
+                            <div class="text-center profile">
+                                <p>Complete your Profile</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                    </div>
+                                </div>
+                                <p>Next Step : <a href="#">Got 320 Points</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="Todo.html">
+                            <i class="fa fa-dashboard"></i> <span>Kontrol Paneli</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Projeler.html">
+                            <i class="glyphicon glyphicon-tasks"></i> <span>Projeler</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gorevler.html">
+                            <i class="fa fa-laptop"></i> <span>Görevler</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cog"></i>
+                            <span>İşlemler</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="ProjeEkle.html"><i class="fa fa-circle-o"></i> Proje Ekle</a></li>
+                            <li><a href="GorevEkle.html"><i class="fa fa-circle-o"></i> Görev Ekle</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Raporlar</a></li>
+                            <li><a href="Hatalar.html"><i class="fa fa-circle-o"></i> Hatalar</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Çalışmalar</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Yapılan İşler</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Todo.html">
+                            <i class="fa fa-calendar"></i> <span>En son yapılanlar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Todo.html">
+                            <i class="fa fa-envelope"></i> <span>Mesajlar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Todo.html">
+                            <i class="fa fa-edit"></i> <span>İstekler</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <!-- start:project stats -->
+                <div class="project-sidebar">
+                    <div class="main-project-sidebar">
+                        <p><strong>Projeler</strong></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+                        <p>60% Complete</p>
+                    </div>
+                    <div class="main-project-sidebar">
+                        <p><strong>Görevler</strong></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                <span class="sr-only">40% Complete</span>
+                            </div>
+                        </div>
+                        <p>40% Complete</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <!-- end:left sidebar -->
+
+        <!-- start:right sidebar -->
+        <aside class="right-side">
+            <section class="content">
+
+                <!-- start:content -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>
+                            Kontrol Paneli
+                        </h1>
+                    </div>  
+
+                    <!-- start:site information -->
+                    <div class="site-information">
+                        <div class="row">
+						<div class="col-md-12">
+                        <div class="well well-lg">
+                            <h3>MMERT</h3>
+                            <p>Projenin son haline erişmek için.</p>  <a href="#">Tıklayınız..</a>
+                        </div>
+						</div>
+                            <div class="col-sm-6 col-md-3">
+
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end:site information -->
+
+                    <!-- start:site information 2 -->
+                    <div class="site-information-2">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end:site information 2 -->
+
+
+                </div>
+                <!-- end:content -->
+            </section>
+        </aside>
+        <!-- end:right sidebar -->
+    </div>
+    <!-- end:wrapper body -->
+@*
+	<!-- start:javascript for all pages -->
+		<!-- start:jquery -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<!-- start:bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- start:arjuna.js -->
+		<script src="js/arjuna.js"></script>
+	<!-- end:javascript for all pages-->
+
+    <!-- start:javascript for this page -->
+    <script src="plugins/flot/jquery.flot.min.js"></script>
+    <script src="plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="plugins/flot/jquery.flot.spline.js"></script>
+    <script src="plugins/flot/jquery.flot.pie.min.js"></script>
+    <script src="plugins/flot/jquery.flot.resize.js"></script>
+    <script src="plugins/flot/jquery.flot.grow.js"></script>
+    <script src="plugins/flot/demo.js"></script>
+    <script src="plugins/owl.carousel/owl-carousel/owl.carousel.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <!-- end:javascript for this page -->*@
+    @RenderBody()
+    @Scripts.Render("~/Scripts")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <script src="../../Content/plugins/flot/jquery.flot.grow.js" type="text/javascript"></script>
+    <script src="../../Content/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+    <script src="../../Content/plugins/flot/jquery.flot.orderBars.js" type="text/javascript"></script>
+    <script src="../../Content/plugins/flot/jquery.flot.pie.min.js" type="text/javascript"></script>
+    <script src="../../Content/plugins/flot/jquery.flot.resize.js" type="text/javascript"></script>
+    <script src="../../Content/plugins/flot/jquery.flot.spline.js" type="text/javascript"></script>
+    <script src="../../Content/plugins/flot/jquery.flot.tooltip.min.js" type="text/javascript"></script>
+</body>
+</html>
